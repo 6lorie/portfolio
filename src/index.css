@@ -1,0 +1,287 @@
+/* =======================================================
+   MODERN TECH PORTFOLIO THEME
+   FULLY RESPONSIVE GLOBAL CSS
+======================================================= */
+
+:root {
+
+  /* ===== COLORS ===== */
+  --bg: #070707;
+  --bg-secondary: #0f0f0f;
+
+  --text: #d6d6d6;
+  --text-h: #ffffff;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* ===== NEON ACCENT ===== */
+  --accent: #ffd700;
+  --accent-bg: rgba(255, 215, 0, 0.08);
+  --accent-border: rgba(255, 215, 0, 0.35);
+
+  /* ===== SURFACES ===== */
+  --surface: rgba(255, 255, 255, 0.03);
+  --code-bg: rgba(255, 255, 255, 0.04);
+  --social-bg: rgba(255, 255, 255, 0.02);
+
+  /* ===== SHADOWS ===== */
+  --shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    0 0 15px rgba(255, 215, 0, 0.08);
+
+  /* ===== TYPOGRAPHY ===== */
+  --sans:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+  --heading: var(--sans);
+
+  --mono:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Consolas,
+    monospace;
+
+  /* ===== RESPONSIVE FONT SIZE ===== */
+  font-size: clamp(14px, 1vw, 18px);
+
+  /* ===== BASE FONT ===== */
+  font-family: var(--sans);
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+
+  color: var(--text);
+
+  background:
+    radial-gradient(
+      circle at top,
+      #111 0%,
+      #070707 55%,
+      #050505 100%
+    );
+
+  color-scheme: dark;
+
+  /* ===== TEXT RENDER ===== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  /* ===== RESPONSIVE SPACING ===== */
+  --container-padding: clamp(16px, 5vw, 40px);
+  --section-spacing: clamp(60px, 10vw, 120px);
+
+  /* ===== RESPONSIVE HEADINGS ===== */
+  --h1: clamp(2.4rem, 7vw, 5rem);
+  --h2: clamp(1.8rem, 5vw, 3rem);
+  --h3: clamp(1.2rem, 3vw, 1.8rem);
+
+  /* ===== RESPONSIVE TEXT ===== */
+  --p: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+/* =======================================================
+   GLOBAL RESET
+======================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-family: var(--sans);
+}
+
+/* =======================================================
+   ROOT APP
+======================================================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =======================================================
+   TYPOGRAPHY
+======================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-h);
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+p {
+  font-size: var(--p);
+  margin: 0;
+}
+
+/* =======================================================
+   LINKS
+======================================================= */
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  text-shadow:
+    0 0 6px rgba(255, 215, 0, 0.7),
+    0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+/* =======================================================
+   IMAGES
+======================================================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =======================================================
+   CONTAINER
+======================================================= */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+/* =======================================================
+   SECTION
+======================================================= */
+
+section {
+  padding-block: var(--section-spacing);
+}
+
+/* =======================================================
+   BUTTON RESET
+======================================================= */
+
+button {
+  font-family: inherit;
+}
+
+/* =======================================================
+   SELECTION
+======================================================= */
+
+::selection {
+  background: rgba(255, 215, 0, 0.2);
+  color: #fff;
+}
+
+/* =======================================================
+   SCROLLBAR
+======================================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 215, 0, 0.25);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 215, 0, 0.4);
+}
+
+/* =======================================================
+   RESPONSIVE BREAKPOINTS
+======================================================= */
+
+/* ===== LARGE TABLETS ===== */
+@media (max-width: 1024px) {
+
+  :root {
+    --section-spacing: 90px;
+  }
+
+}
+
+/* ===== TABLETS ===== */
+@media (max-width: 768px) {
+
+  :root {
+    --section-spacing: 70px;
+    --container-padding: 20px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+
+  :root {
+    --section-spacing: 60px;
+    --container-padding: 16px;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+
+}
+
+/* ===== VERY SMALL DEVICES ===== */
+@media (max-width: 360px) {
+
+  :root {
+    font-size: 13px;
+  }
+
+}

@@ -1,0 +1,170 @@
+/* ================= OVERLAY ================= */
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999999;
+
+    padding: 20px;
+}
+
+/* ================= MAIN MODAL ================= */
+
+.popup-box {
+    width: 95%;
+    max-width: 1200px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #0a0a0a;
+
+    border: 1px solid rgba(255, 215, 0, 0.2);
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    color: #ffd700;
+
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.12);
+}
+
+/* ================= CLOSE ================= */
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    font-size: 26px;
+
+    background: transparent;
+    border: none;
+
+    color: #ffd700;
+
+    cursor: pointer;
+}
+
+/* ================= HEADER ================= */
+
+.popup-header {
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.popup-main-img {
+    width: 320px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.popup-title h1 {
+    margin-bottom: 10px;
+}
+
+.popup-title p {
+    color: rgba(255,215,0,0.7);
+}
+
+/* ================= SECTION ================= */
+
+.popup-section {
+    margin-top: 30px;
+}
+
+.popup-section h2 {
+    margin-bottom: 15px;
+}
+
+/* ================= TOOLS ================= */
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.tool-card {
+    background: rgba(255,255,255,0.03);
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.tool-card img {
+    width: 50px;
+}
+
+/* ================= IMAGES ================= */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ================= VIDEO ================= */
+
+video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .popup-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .popup-main-img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .popup-box {
+        padding: 15px;
+    }
+}

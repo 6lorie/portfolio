@@ -1,0 +1,80 @@
+.showcase-card {
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(255, 215, 0, 0.05);
+}
+
+.showcase-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(255, 215, 0, 0.25);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+/* ===== MEDIA ===== */
+.showcase-media {
+    width: 100%;
+    overflow: hidden;
+}
+
+.showcase-media img,
+.showcase-media video {
+    width: 100%;
+    display: block;
+
+    object-fit: cover;
+
+    max-height: 500px;
+
+    transition: 0.4s ease;
+}
+
+.showcase-card:hover img,
+.showcase-card:hover video {
+    transform: scale(1.02);
+}
+
+/* ===== CONTENT ===== */
+.showcase-content {
+    padding: 24px;
+}
+
+.showcase-content h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.showcase-content p {
+    color: #c9c9c9;
+    line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    .showcase-content {
+        padding: 18px;
+    }
+
+    .showcase-content h2 {
+        font-size: 1.4rem;
+    }
+
+}

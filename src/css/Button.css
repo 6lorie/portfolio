@@ -1,0 +1,77 @@
+.btn {
+    padding: 12px 18px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    border: 1px solid transparent;
+
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(8px);
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===== PRIMARY (NEON YELLOW) ===== */
+.btn.primary {
+    color: #ffd700;
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    background: rgba(255, 215, 0, 0.08);
+
+    box-shadow:
+        0 0 10px rgba(255, 215, 0, 0.15),
+        inset 0 0 10px rgba(255, 215, 0, 0.05);
+}
+
+/* glow effect animation */
+.btn.primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 215, 0, 0.3),
+        transparent
+    );
+
+    transition: 0.5s;
+}
+
+.btn.primary:hover::before {
+    left: 100%;
+}
+
+.btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 20px rgba(255, 215, 0, 0.25),
+        0 0 40px rgba(255, 215, 0, 0.1);
+}
+
+/* ===== GHOST BUTTON ===== */
+.btn.ghost {
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.btn.ghost:hover {
+    border-color: rgba(255, 215, 0, 0.3);
+    color: #ffd700;
+
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.12);
+    transform: translateY(-2px);
+}

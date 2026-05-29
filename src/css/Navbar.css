@@ -1,0 +1,149 @@
+/* ===== NAVBAR BASE ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 32px;
+    background: #0a0a0a;
+
+     z-index: 9999;
+
+     position: fixed;   /* IMPORTANT */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ===== LOGO CONTAINER ===== */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* ===== LOGO IMAGE ===== */
+.navbar-left img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 0 8px rgba(255, 215, 0, 0.25));
+
+    transition: 0.3s ease;
+}
+
+/* hover glow */
+.navbar-left img:hover {
+    transform: scale(1.05);
+
+    filter:
+        drop-shadow(0 0 12px rgba(255, 215, 0, 0.45));
+}
+
+/* ===== NAV LINKS (DESKTOP) ===== */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 26px;
+    z-index: 9999;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffd700;
+    font-weight: 500;
+
+    position: relative;
+    transition: 0.3s ease;
+}
+
+
+.nav-links li a:hover {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* ===== BURGER BUTTON (hidden on desktop) ===== */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 28px;
+    height: 3px;
+    background: #ffd700;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #ffd700;
+    transition: 0.3s ease;
+}
+
+/* burger animation when active */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;
+    }
+
+    /* hide menu initially */
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(10px);
+
+        gap: 18px;
+        padding: 20px 0;
+
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+
+        transition: 0.3s ease;
+    }
+
+    /* show menu when open */
+    .nav-links.show {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 12px;
+        width: 100%;
+    }
+}
