@@ -4,7 +4,7 @@ export const projects = [
             title: "Java Software Development",
             description:
                 "Laravel-based inventory management platform with authentication and dashboard.",
-            //image: inventoryImg,
+            image: "/hero.png"
         },
 
         {   
@@ -12,7 +12,7 @@ export const projects = [
             title: "Web Development",
             description:
                 "Online multiplayer game using WebSocket and PHP backend.",
-            //image: gameImg,
+            image: "/hero.png"
         },
 
         {
@@ -20,7 +20,7 @@ export const projects = [
             title: "Python Development",
             description:
                 "YOLOv8 computer vision project for PCB component recognition.",
-            //image: pcbImg,
+            image: "/hero.png",
         },
 
         {
@@ -28,7 +28,7 @@ export const projects = [
             title: "Mobile Application",
             description:
                 "YOLOv8 computer vision project for PCB component recognition.",
-            //image: pcbImg,
+            image: "/hero.png",
         },
     ];
 
