@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import "../css/Section.css";
+import "../css/Home.css";
 
 export default function Home() {
 
