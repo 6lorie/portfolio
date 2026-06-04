@@ -10,6 +10,7 @@
 }
 
 .slider-header h1 {
+    text-align: center;
     color: #ffd700;
     font-size: 3rem;
     margin-bottom: 10px;
@@ -18,8 +19,13 @@
 }
 
 .slider-header p {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
     color: #bdbdbd;
     max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* ===== SLIDER ===== */
@@ -101,7 +107,7 @@
 .dev-card-content h2 {
     color: #ffd700;
     margin-bottom: 12px;
-   
+    font-size: 2rem;
 }
 
 .dev-card-content p {

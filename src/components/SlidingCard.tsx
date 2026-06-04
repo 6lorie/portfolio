@@ -1,6 +1,7 @@
 import "../css/SlidingCard.css";
 
 type DevCard = {
+    id: string;
     title: string;
     description: string;
     image: string;
@@ -8,7 +9,6 @@ type DevCard = {
 
 type SlidingCardProps = {
     cards: DevCard[];
-
     onSelect: (card: DevCard) => void;
 };
 
@@ -20,32 +20,37 @@ const SlidingCard = ({ cards, onSelect }: SlidingCardProps) => {
                 <h1>Development Projects</h1>
 
                 <p>
-                    Modern applications and systems I developed and I have collaborated with.
+                    Modern applications and systems I developed and have collaborated on.
                 </p>
             </div>
 
             <div className="dev-slider">
 
-                {cards.map((card, index) => (
-                    
+                {cards.map((card) => (
+
                     <div
                         className="dev-card"
-                        key={index}
+                        key={card.id}
                         onClick={() => onSelect(card)}
                     >
-                         
+
                         <div className="dev-card-image">
-                            <img src={card.image} alt={card.title} />
+                            <img
+                                src={card.image}
+                                alt={card.title}
+                            />
                         </div>
 
                         <div className="dev-card-content">
-                            
+
                             <h2>{card.title}</h2>
+
                             <p>{card.description}</p>
 
                         </div>
 
                     </div>
+
                 ))}
 
             </div>

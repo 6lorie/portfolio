@@ -1,23 +1,8 @@
 import "../css/PopUp.css";
-
-
-
-type Tool = {
-    name: string;
-    icon: string;
-};
-
-type ProjectType = {
-    title: string;
-    description: string;
-    image: string;
-    images?: string[];
-    video?: string;
-    tools?: Tool[];
-};
+import { projectDataList } from "../data/ProjectDataList";
 
 type Props = {
-    data: ProjectType | null;
+    data: any;
     onClose: () => void;
 };
 
@@ -25,90 +10,99 @@ export default function PopUp({ data, onClose }: Props) {
 
     if (!data) return null;
 
+    const category =
+        projectDataList[data.id as keyof typeof projectDataList];
+
+    if (!category) return null;
+
     return (
-        <div className="popup-overlay" onClick={onClose}>
+        <div
+            className="popup-overlay"
+            onClick={onClose}
+        >
 
             <div
                 className="popup-box"
                 onClick={(e) => e.stopPropagation()}
             >
 
-                {/* CLOSE */}
-                <button className="popup-close" onClick={onClose}>
+                <button
+                    className="popup-close"
+                    onClick={onClose}
+                >
                     ✕
                 </button>
 
-                {/* HEADER */}
-                <div className="popup-header">
+                <h1>{category.title}</h1>
 
-                    <img
-                        src={data.image}
-                        alt={data.title}
-                        className="popup-main-img"
-                    />
+                {category.projects.map((project, index) => (
 
-                    <div className="popup-title">
+                    <div
+                        className="project-item"
+                        key={index}
+                    >
 
-                        <h1>{data.title}</h1>
+                        <h2>{project.subtitle}</h2>
 
-                        <p>{data.description}</p>
+                        <p>{project.description}</p>
 
-                    </div>
-
-                </div>
-
-                {/* TOOLS */}
-                {data.tools && (
-                    <div className="popup-section">
-
-                        <h2>Tools Used</h2>
+                        {/* TOOLS */}
 
                         <div className="tools-grid">
 
-                            {data.tools.map((tool, i) => (
-                                <div className="tool-card" key={i}>
+                            {project.tools?.map((tool, toolIndex) => (
 
-                                    <img src={tool.icon} />
+                                <div
+                                    className="tool-card"
+                                    key={toolIndex}
+                                >
 
-                                    <p>{tool.name}</p>
+                                    <img
+                                        src={tool.icon}
+                                        alt={tool.name}
+                                    />
+
+                                    <span>{tool.name}</span>
 
                                 </div>
+
                             ))}
 
                         </div>
 
-                    </div>
-                )}
-
-                {/* IMAGES */}
-                {data.images && (
-                    <div className="popup-section">
-
-                        <h2>Project Screenshots</h2>
+                        {/* IMAGES */}
 
                         <div className="image-grid">
 
-                            {data.images.map((img, i) => (
-                                <img key={i} src={img} />
+                            {project.images?.map((image, imageIndex) => (
+
+                                <img
+                                    key={imageIndex}
+                                    src={image}
+                                    alt={project.subtitle}
+                                />
+
                             ))}
 
                         </div>
 
+                        {/* VIDEO */}
+
+                        {project.video && (
+
+                            <video controls>
+
+                                <source
+                                    src={project.video}
+                                />
+
+                            </video>
+
+                        )}
+
                     </div>
-                )}
 
-                {/* VIDEO */}
-                {data.video && (
-                    <div className="popup-section">
-
-                        <h2>Demo Video</h2>
-
-                        <video controls>
-                            <source src={data.video} />
-                        </video>
-
-                    </div>
-                )}
+                ))}
 
             </div>
 

@@ -1,14 +1,22 @@
 export const projects = [
+
         {
-            id: "Java",
+            id: "analytics",
+            title: "Data Analytics",
+            description: "Projects for all skills, from beginner to advanced, in data analytics.",
+            image: "https://www.svgrepo.com/show/303654/java-logo.svg"
+        },
+
+        {
+            id: "java",
             title: "Java Software Development",
             description:
                 "Laravel-based inventory management platform with authentication and dashboard.",
-            image: "/hero.png"
+            image: "https://www.svgrepo.com/show/303654/java-logo.svg"
         },
 
         {   
-            id: "Web",
+            id: "web",
             title: "Web Development",
             description:
                 "Online multiplayer game using WebSocket and PHP backend.",
@@ -20,7 +28,7 @@ export const projects = [
             title: "Python Development",
             description:
                 "YOLOv8 computer vision project for PCB component recognition.",
-            image: "/hero.png",
+            image: "https://www.svgrepo.com/show/354238/python.svg",
         },
 
         {

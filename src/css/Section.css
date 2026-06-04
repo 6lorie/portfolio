@@ -4,12 +4,13 @@
 
 #home {
     width: 100%;
-    min-height: 100vh;
+    
 
     display: flex;
     align-items: center;
 
     padding: 100px 20px;
+    
 }
 
 /* ======================================================
@@ -17,6 +18,7 @@
 ====================================================== */
 
 .container-profile {
+    
     width: 100%;
     max-width: 1200px;
 
@@ -26,7 +28,7 @@
     justify-content: space-between;
     align-items: center;
 
-    gap: 60px;
+    gap: 120px;
 }
 
 /* ======================================================
