@@ -14,7 +14,7 @@ export const projectDataList = {
                     "/hero.png"
                 ],
 
-                video: "/sample.mp4",
+                video: "/new.mp4",
 
                 tools: [
                     {
@@ -45,7 +45,7 @@ export const projectDataList = {
                     "/hero.png"
                 ],
 
-                video: "",
+                video: "/new.mp4",
 
                 tools: [
                     {
@@ -74,6 +74,8 @@ export const projectDataList = {
                 images: [
                     "/hero.png"
                 ],
+
+                video: "/new.mp4",
 
                 tools: [
                     {
