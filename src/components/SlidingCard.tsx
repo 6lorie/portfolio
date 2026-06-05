@@ -17,10 +17,10 @@ const SlidingCard = ({ cards, onSelect }: SlidingCardProps) => {
         <section className="dev-slider-section">
 
             <div className="slider-header">
-                <h1>Development Projects</h1>
+                <h1>Projects</h1>
 
                 <p>
-                    Modern applications and systems I developed and have collaborated on.
+                    Modern applications and systems I developed and have collaborated on. These are academic and personal projects.
                 </p>
             </div>
 

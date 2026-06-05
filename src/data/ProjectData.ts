@@ -4,7 +4,7 @@ export const projects = [
             id: "analytics",
             title: "Data Analytics",
             description: "Projects for all skills, from beginner to advanced, in data analytics.",
-            image: "https://www.svgrepo.com/show/303654/java-logo.svg"
+            image: "https://vectorified.com/images/analytics-icon-14.png"
         },
 
         {
@@ -12,7 +12,7 @@ export const projects = [
             title: "Java Software Development",
             description:
                 "Laravel-based inventory management platform with authentication and dashboard.",
-            image: "https://www.svgrepo.com/show/303654/java-logo.svg"
+            image: "https://www.svgrepo.com/show/184143/java.svg"
         },
 
         {   
@@ -20,7 +20,7 @@ export const projects = [
             title: "Web Development",
             description:
                 "Online multiplayer game using WebSocket and PHP backend.",
-            image: "/hero.png"
+            image: "https://static.vecteezy.com/system/resources/previews/015/153/047/original/world-wide-web-icon-design-for-web-interfaces-and-applications-png.png"
         },
 
         {
@@ -36,7 +36,7 @@ export const projects = [
             title: "Mobile Application",
             description:
                 "YOLOv8 computer vision project for PCB component recognition.",
-            image: "/hero.png",
+            image: "https://www.svgrepo.com/show/281566/smartphone-mobile-phone.svg",
         },
     ];
 

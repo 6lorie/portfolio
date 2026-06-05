@@ -86,17 +86,20 @@ export default function PopUp({ data, onClose }: Props) {
 
                         </div>
 
-                        {/* VIDEO */}
-
                         {project.video && (
 
-                            <video controls>
+                            <div className="demo-container">
 
-                                <source
-                                    src={project.video}
-                                />
+                                <a
+                                    href={project.video}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="demo-button"
+                                >
+                                    View Demo Video
+                                </a>
 
-                            </video>
+                            </div>
 
                         )}
 

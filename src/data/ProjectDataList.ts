@@ -1,3 +1,5 @@
+
+
 export const projectDataList = {
     java: {
         title: "Java Software Development",
@@ -10,20 +12,27 @@ export const projectDataList = {
                     "Calculator capable of solving numerical method problems including Newton-Raphson and Secant Method.",
 
                 images: [
-                    "/hero.png",
-                    "/hero.png"
+                    "/data_files/java/calculator/jv1.png",
+                    "/data_files/java/calculator/jv2.png",
+                    "/data_files/java/calculator/jv3.png",
+                    "/data_files/java/calculator/jv4.png"
+                    
                 ],
 
-                video: "/new.mp4",
+                video: "https://drive.google.com/file/d/1K1Ah2Ms7e7QbZqCgjJ4BkywlT9cuonWI/view?usp=drive_link",
 
                 tools: [
                     {
                         name: "Java",
-                        icon: "/hero.png"
+                        icon: "https://www.svgrepo.com/show/184143/java.svg"
                     },
                     {
-                        name: "Swing",
-                        icon: "/hero.png"
+                        name: "Figma",
+                        icon: "https://www.svgrepo.com/show/448222/figma.svg"
+                    },
+                    {
+                        name: "Canva",
+                        icon: "/data_files/canva.png"
                     }
                 ]
             },
@@ -35,26 +44,33 @@ export const projectDataList = {
                     "Desktop application for managing rentals, customers, inventory, and reports.",
 
                 images: [
-                    "/hero.png",
-                    "/hero.png", 
-                    "/hero.png",
-                    "/hero.png",
-                    "/hero.png",
-                    "/hero.png",
-                    "/hero.png",
-                    "/hero.png"
+                    "/data_files/java/rental/jjv1.png",
+                    "/data_files/java/rental/jjv2.png",
+                    "/data_files/java/rental/jjv3.png",
+                    "/data_files/java/rental/jjv4.png",
+                    "/data_files/java/rental/jjv5.png",
+                    "/data_files/java/rental/jjv6.png"
+                    
                 ],
 
-                video: "/new.mp4",
+                video: "https://drive.google.com/file/d/1OzfkyQ01POr4xNKTB9vmTRlavoKI5AdH/view?usp=drive_link",
 
                 tools: [
                     {
                         name: "Java",
-                        icon: "/hero.png"
+                        icon: "https://www.svgrepo.com/show/184143/java.svg"
+                    },
+                    {
+                        name: "Figma",
+                        icon: "https://www.svgrepo.com/show/448222/figma.svg"
+                    },
+                    {
+                        name: "Canva",
+                        icon: "/data_files/canva.png"
                     },
                     {
                         name: "MySQL",
-                        icon: "/hero.png"
+                        icon: "https://www.svgrepo.com/show/354099/mysql.svg"
                     }
                 ]
             }
@@ -65,26 +81,149 @@ export const projectDataList = {
         title: "Web Development",
 
         projects: [
+            
             {
-                subtitle: "Multiplayer Tic Tac Toe",
-
+                subtitle: "Bulacan State University College of Engineering Website",
                 description:
-                    "Real-time multiplayer Tic Tac Toe using PHP and WebSockets.",
-
+                    "Responsive website for the College of Engineering at Bulacan State University.",
                 images: [
-                    "/hero.png"
+                    "/data_files/web/coe/w1.png",
+                    "/data_files/web/coe/w2.png",
+                    "/data_files/web/coe/w3.png",
+                    "/data_files/web/coe/w4.png",
+                    "/data_files/web/coe/w5.png"
                 ],
-
-                video: "/new.mp4",
-
+                video: "https://drive.google.com/file/d/1SHAlRoMGYPz6drPd1_zESyagxiMy_rgS/view?usp=drive_link",
                 tools: [
                     {
-                        name: "PHP",
-                        icon: "/hero.png"
+                        name: "HTML",
+                        icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png"
+                    },
+                    {
+                        name: "CSS",
+                        icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png"
+                    },
+                    {
+                        name: "Typescript",
+                        icon: "https://www.svgrepo.com/show/354478/typescript-icon.svg"
+                    },
+                    {
+                        name: "React",
+                        icon: "/data_files/react.png"
+                    }
+                ]
+            },
+            {
+                subtitle: "Bulacan State University ARICC Inventory System",
+                description: "Inventory management system for the ARICC department at Bulacan State University.",
+                images: [
+                    "/data_files/web/inventory/w1.png",
+                    "/data_files/web/inventory/w2.png",
+                    "/data_files/web/inventory/w4.png",
+                    "/data_files/web/inventory/w3.png"
+                    
+                ],
+                video: "https://drive.google.com/file/d/1a2bzOPINttoUeJ6ofapWLXXzAjJH8XHy/view?usp=drive_link",
+                tools: [
+                    {
+                        name: "HTML",
+                        icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png"
+                    },
+                    {
+                        name: "CSS",
+                        icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png"
                     },
                     {
                         name: "JavaScript",
-                        icon: "/hero.png"
+                        icon: "https://www.svgrepo.com/show/353925/javascript.svg"
+                    },
+                    {
+                        name: "PHP",
+                        icon: "https://www.svgrepo.com/show/452088/php.svg"
+                    },
+                    {
+                        name: "Laravel",
+                        icon: "/data_files/laravel.png"
+                    }
+                ]
+            },
+            {
+                subtitle: "Multiplayer Games: PlaygroundPH",
+
+                description:
+                    "Real-time multiplayer game platform using PHP and WebSockets.",
+
+                images: [
+                    "data_files/web/game/g1.png",
+                    "data_files/web/game/g2.png",
+                    "data_files/web/game/g3.png",
+                    "data_files/web/game/g4.png",
+                    "data_files/web/game/g5.png"
+                ],
+
+                video: "https://drive.google.com/file/d/1G4EOFCiF16dM0D6D9_xJKqoR4p4ypclO/view?usp=drive_link",
+
+                tools: [
+                    {
+                        name: "HTML",
+                        icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png"
+                    },
+                    {
+                        name: "CSS",
+                        icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png"
+                    },
+                    {
+                        name: "JavaScript",
+                        icon: "https://www.svgrepo.com/show/353925/javascript.svg"
+                    },
+                    {
+                        name: "PHP",
+                        icon: "https://www.svgrepo.com/show/452088/php.svg"
+                    },
+                    {
+                        name: "PHP Mailer",
+                        icon: "https://iconape.com/wp-content/png_logo_vector/phpmailer.png"
+                    },
+                    {
+                        name: "Pusher",
+                        icon: "https://www.svgrepo.com/show/354235/pusher-icon.svg"
+                    }
+                ]
+            }
+
+        ]
+    },
+
+    python:{
+        title: "Python Development",
+        projects: [
+            {
+                subtitle: "PCB Component Detector",
+                description: "Python application for detecting components on PCB boards.",
+                images: [
+                    "/data_files/python/pcb/p1.png",
+                    "/data_files/python/pcb/p2.png",
+                    "/data_files/python/pcb/p3.png",
+                    "/data_files/python/pcb/p4.png"
+                ],
+                video: "https://drive.google.com/file/d/1Kiquy103-ziRVCQue9KR1c8EZ5wKJ8ck/view?usp=drive_link",
+                tools: [
+                    {
+                        name: "Python",
+                        icon: "https://www.svgrepo.com/show/354238/python.svg"
+
+                    },
+                    {
+                        name: "OpenCV",
+                        icon: "https://github.com/opencv/opencv/wiki/logo/OpenCV_logo_black.png"
+                    },
+                    {
+                        name: "Yolov8",
+                        icon: "https://api.nuget.org/v3-flatcontainer/yolov8/1.2.0/icon"
+                    }, 
+                    {
+                        name: "Google Colab",
+                        icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-colab-icon.png"
                     }
                 ]
             }

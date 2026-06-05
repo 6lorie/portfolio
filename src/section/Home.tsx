@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import "../css/Section.css";
+import "../css/Home.css";
 
 export default function Home() {
 
@@ -44,11 +44,17 @@ export default function Home() {
                         <Button
                             children="Contact Me"
                             variant="ghost"
+                            onClick={() => {
+                                window.location.href = "mailto:gloriemayverayo@gmail.com";
+                            }}
                         />
 
                         <Button
-                            children="Download Resume"
+                            children="View Resume"
                             variant="primary"
+                            onClick={() => {
+                                window.open("/DATA_ENCODER_CV.pdf", "_blank");
+                            }}
                         />
 
                     </div>

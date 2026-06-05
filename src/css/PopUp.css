@@ -198,7 +198,7 @@
 .image-grid img {
     flex: 0 0 auto;
 
-    width: 320px;
+    width: 350px;
     height: 220px;
 
     object-fit: cover;
@@ -218,17 +218,47 @@
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
 }
 
-/* ================= VIDEO ================= */
+/* ================= DEMO BUTTON ================= */
 
-video {
-    width: 100%;
-    height: auto;
+.demo-container {
+    display: flex;
 
-    border-radius: 18px;
+    justify-content: center;
 
-    border: 1px solid rgba(255, 215, 0, 0.1);
+    margin-top: 25px;
+}
 
-    margin-top: 20px;
+.demo-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 28px;
+
+    border-radius: 14px;
+
+    background: rgba(255, 215, 0, 0.08);
+
+    border: 1px solid rgba(255, 215, 0, 0.25);
+
+    color: #ffd700;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.demo-button:hover {
+    transform: translateY(-3px);
+
+    background: rgba(255, 215, 0, 0.15);
+
+    box-shadow:
+        0 0 12px rgba(255, 215, 0, 0.25),
+        0 0 24px rgba(255, 215, 0, 0.15);
 }
 
 /* ================= RESPONSIVE ================= */
