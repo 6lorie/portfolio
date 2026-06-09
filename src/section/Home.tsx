@@ -51,7 +51,7 @@ export default function Home() {
                             children="View Resume"
                             variant="primary"
                             onClick={() => {
-                                window.open("/DATA_ENCODER_CV.pdf", "_blank");
+                                window.open("/data_files/Glorie_May_Verayo_Resume.pdf", "_blank");
                             }}
                         />
 
