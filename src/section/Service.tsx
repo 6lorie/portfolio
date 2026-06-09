@@ -22,7 +22,7 @@ export default function Service() {
                 <div className="service-card">
 
                     <div className="service-icon">
-                        <img src="https://iconsvg.co/icon/08dbb3cd-1a86-4abe-84f3-ec609bc31a6f.svg" alt="Data Analyst" />
+                        <img src="https://www.svgrepo.com/show/493848/data-collection.svg" alt="Data Analyst" />
                     </div>
 
                     <h2>Data Analyst</h2>

@@ -201,7 +201,7 @@
     width: 350px;
     height: 220px;
 
-    object-fit: cover;
+    object-fit: contain;
 
     border-radius: 16px;
 

@@ -18,6 +18,8 @@ export default function Home() {
                     <h1>
                         Hi, I'm <span>Glorie May Verayo</span>
                     </h1>
+                    
+                    <br />
 
                     <h2>
                         Computer Engineering Graduate
@@ -25,16 +27,12 @@ export default function Home() {
 
                     <p className="profile-description">
 
-                        I am a Computer Engineering graduate of
-                        Bulacan State University passionate about
-                        developing modern and scalable web applications.
-
-                        <br /><br />
-
-                        I specialize in frontend and backend development
-                        using React, PHP, Laravel, JavaScript, and MySQL,
-                        with experience in real-time systems,
-                        software engineering, and modern UI design.
+                        I am a Computer Engineering graduate with experience in web, software, 
+                        and mobile development, data analysis, and virtual assistance. 
+                        <br /> <br/>
+                        I enjoy creating useful applications, working with data, and 
+                        helping with daily tasks and business operations. I am eager 
+                        to learn new skills, solve problems, and provide quality work.
 
                     </p>
 

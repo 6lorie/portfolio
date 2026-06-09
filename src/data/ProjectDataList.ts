@@ -9,7 +9,7 @@ export const projectDataList = {
                 subtitle: "Numerical Methods Calculator",
 
                 description:
-                    "Calculator capable of solving numerical method problems including Newton-Raphson and Secant Method.",
+                    "Calculator capable of solving numerical method problems including linear algebra methods and matrices methods.",
 
                 images: [
                     "/data_files/java/calculator/jv1.png",
@@ -151,7 +151,7 @@ export const projectDataList = {
                 subtitle: "Multiplayer Games: PlaygroundPH",
 
                 description:
-                    "Real-time multiplayer game platform using PHP and WebSockets.",
+                    "Real-time multiplayer game platform using PHP and Websocket API.",
 
                 images: [
                     "data_files/web/game/g1.png",
@@ -227,6 +227,42 @@ export const projectDataList = {
                     }
                 ]
             }
+        ]
+    },
+
+    mobile: {
+        title: "Mobile Application",
+        projects: [
+            {
+                subtitle: "VoyagePH",
+                description: "Mobile app for travel planning and booking in the Philippines.",
+                images: [
+                    "/data_files/mobile/voyageph/v1.png",
+                    "/data_files/mobile/voyageph/v2.png",
+                    "/data_files/mobile/voyageph/v3.png",
+                    "/data_files/mobile/voyageph/v4.png",
+                    "/data_files/mobile/voyageph/v5.png"
+                ],
+                video: "https://drive.google.com/file/d/169x5DmYj8YOYDtKeZ5qRzBcNCp7YUFG8/view?usp=sharing",
+                
+                tools: [
+                    {
+                        name: "Flutter",
+                        icon: "https://seekicon.com/free-icon-download/flutter_2.png"
+                    },
+                    {
+                        name: "Dart",
+                        icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/dart-programming-language-icon.png"
+                    },
+                    {
+                        name: "Firebase",
+                        icon: "https://vectorseek.com/wp-content/uploads/2025/05/Firebase-icon-Logo-PNG-SVG-Vector.png"
+
+                    }
+                
+                ]
+            }
+        
         ]
     }
 };
