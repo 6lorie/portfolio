@@ -51,7 +51,7 @@ export default function Home() {
                             children="View Resume"
                             variant="primary"
                             onClick={() => {
-                                window.open("/Glorie_May_Verayo_Resume.pdf", "_blank");
+                                window.open("/Glorie_May_Verayo_CV.pdf", "_blank");
                             }}
                         />
 
